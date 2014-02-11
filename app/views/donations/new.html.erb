@@ -1,0 +1,67 @@
+<h1 class="easygiving col-sm-6 col-sm-offset-3">
+  <br>
+  Easy Giving
+</h1>
+
+<div class="col-sm-6 col-sm-offset-3 contentbox"> 
+  <h4> Thank you for joining Easy Giving! </h4>
+</div>
+
+<%= form_for @donation do |f| %>
+  <div class="col-sm-6 col-sm-offset-3">
+    <h4> Please select an amount to donate: </h4>
+    <br>
+    <%= radio_button_tag(:amount, "25") %>
+    <%= label_tag(:amount_1, "$25.00")%>
+    <%= radio_button_tag(:amount, "50") %>
+    <%= label_tag(:amount_2, "$50.00") %>
+    <%= radio_button_tag(:amount, "75") %>
+    <%= label_tag(:amount_3, "$75.00")%>
+    <%= radio_button_tag(:amount, "100") %>
+    <%= label_tag(:amount_4, "$100.00") %>
+  </div>
+
+  <div class="col-sm-6 col-sm-offset-3">
+    <h4> Please select a charity to fund: </h4>
+    <br>
+    <%= radio_button_tag(:charity, "UNICEF") %>
+    <%= label_tag(:charity_unicef, "UNICEF")%>
+    <%= radio_button_tag(:charity, "Amnesty International") %>
+    <%= label_tag(:charity_amnesty, "Amnesty International") %>
+    <%= radio_button_tag(:charity, "Sikhs for Justice") %>
+    <%= label_tag(:charity_sikhs, "Sikhs for Justice" ) %>
+    <%= radio_button_tag(:charity, "American Civil Liberties Union") %>
+    <%= label_tag(:charity_aclu, "American Civil Liberties Union") %>
+    <%= radio_button_tag(:charity, "Human Rights Watch") %>
+    <%= label_tag(:charity_rights, "Human Rights Watch") %>
+  </div>
+  <div class="col-sm-6 col-sm-offset-3 pay">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+    data-image="/square-image.png"
+    data-name="Easy Giving Donation"
+    data-description= "Please enter your credit card info:"
+    >
+  </script>
+  </div>
+<% end %>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

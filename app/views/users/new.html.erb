@@ -1,0 +1,40 @@
+<h1 class="easygiving col-sm-6 col-sm-offset-3">
+  <br>
+  Sign Up
+</h1>
+
+<div class="row">
+    <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3 signup-form">
+    <%= form_for(@user) do |f| %>
+      <% unless @user.errors.count == 0   %>
+        <div class="alert alert-error">
+          The form contains <%= pluralize(@user.errors.count, "error") %>.
+        </div>
+        <ul class="list-group">
+        <% @user.errors.full_messages.each do |msg| %>
+          <li class="list-group-item"><%= msg %></li>
+        <% end %>
+        </ul>
+      <% end %>
+<div class="col-sm-6 col-sm-offset-3">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+</div>
+<div class="col-sm-6 col-sm-offset-3">
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+</div>
+<div class="col-sm-6 col-sm-offset-3">
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+</div>
+<div class="col-sm-6 col-sm-offset-3">
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+</div>
+<div class="col-sm-6 col-sm-offset-3">
+      <%= f.submit "Create My Account", class: "btn btn-large btn-default create-my-account" %>
+</div>
+    <% end %>
+  </div>
+</div>

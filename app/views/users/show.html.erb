@@ -1,0 +1,28 @@
+<h1 class="easygiving col-sm-6 col-sm-offset-3">
+	<br>
+	Your Profile
+</h1>
+
+<div class="col-sm-6 col-sm-offset-3">
+	<h2><%= @user.name %>'s Charitible Contributions!</h2> <br>
+</div>
+
+<div class="col-sm-8 col-sm-offset-2">
+	<table class= "table">
+		<thead>
+			<th> Time of Donation </th>
+			<th> Charity Name </th>
+			<th>Donation Amount</th>
+		</thead>
+		<tbody>
+		<% @user.donations.each do |x| %>
+			<tr>
+				<td><%= x.created_at %></td>
+				<td><%= x.charity_name %></td>
+				<td><%= x.amount %></td>
+			</tr>
+		<% end %>
+		</tbody>
+
+	</table>
+</div>

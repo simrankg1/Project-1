@@ -1,0 +1,138 @@
+h1{
+	color: white;
+	font-family: 'Allura', cursive;
+}
+
+h1.easygiving{
+	display: block;
+	text-align: center;
+	text-align: center;
+	padding: 10px;
+	font-size: 100px;
+	margin-top: -45px;
+	font-family: 'Allura', cursive;
+}
+
+h2 {
+	font-family: 'Gilda Display', serif;
+	color: white;
+	text-align: center;
+}
+
+body{
+	background: url("earth2.jpg") no-repeat center;
+
+}
+
+h4{
+	color: white;
+	text-align: center;
+	font-family: 'Gilda Display', serif;
+}
+
+.btn-custom{
+	background-color: #F2F5A9;
+}
+
+.sign_up{
+	font-family: 'Gilda Display', serif;
+}
+
+.sign_up a{
+	color: white;
+	font-size: 50px;
+	font-family: 'Allura', cursive;
+	width: 100%;
+	text-align: center;
+	display: block;
+
+}
+
+.sign_up a:hover{
+	text-decoration: none;
+	/*background-color: ;*/
+	color: #F2F5A9;
+}
+
+.navbar-text a{
+	color: white;
+	text-align: center;
+	width: 100%;
+	font-size: 18px;
+	display: block;
+	font-family: 'Gilda Display', serif;
+}
+.navbar-text a:hover{
+	color: #F2F5A9;
+	text-decoration: none;
+
+}
+.contentbox{
+	margin-top: 100px;
+}
+
+.navbar-brand{
+	color: white;
+	font-family: 'Allura', cursive;
+	font-size: 20px;
+
+}
+
+p.intro{
+	color: green;
+	font-size: 20px;
+	text-align: center;
+}
+
+p{
+		font-size: 18px;
+		padding: 10px;
+		color: white;
+
+}
+
+
+.signup-form {
+	color: white;
+	text-align: center;
+	display: block;
+}
+
+
+.signup-form input {
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	font-family: 'Gilda Display', serif;
+	background-color: rgba(255,255,255,.75);
+	color: green;
+	padding-left: 10px;
+	font-size: 20px; 
+	width: 100%;
+	margin: 10px;
+	margin-top: -5px;
+
+}
+
+.pay{
+	text-align: center;
+}
+
+.signup-form .create-my-account { margin-top: 50px;}
+
+#full-screen { 
+	height:100%;
+	width: 100%;
+	display: block;
+	background-color: green;
+}
+
+table.table {
+	color: white;
+	font-family: 'Gilda Display', serif;
+}
+
+input[type=radio] { padding: 20px; display: inline;}
+
+table.table tr td {
+	border-top: none;}

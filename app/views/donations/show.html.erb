@@ -1,0 +1,12 @@
+<h1>Thank you for donating $<%= @donation.amount %>.00 to <%= @donation.charity_name %>! </h1>
+
+
+<p> Explore your charity's website below: </p>
+
+<%= link_to "See Previous Donations", user_path(current_user) %>
+
+<br>
+
+<%= link_to "Make a New Donation", new_donation_path(current_user) %>
+<!-- 
+(current_user)  -->

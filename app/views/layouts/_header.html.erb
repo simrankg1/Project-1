@@ -1,0 +1,31 @@
+<nav class="navbar navbar-fixed-bottom">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Easy Giving</a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="navbar-header navbar-right">
+    <% if signed_in? %>
+      <p class="navbar-text">
+        <%= link_to "Donate", new_donation_path %>
+      </p>
+      <p class="navbar-text">
+        <%= link_to "My profile", current_user %>
+      </p>
+      <p class="navbar-text">
+        <%= link_to "Sign out", signout_path, method: "delete" %>
+      </p>
+    <% else %>
+        <div class= "navbar-text">
+          <%= link_to "Sign In", signin_path %>
+        </div>
+    <% end %>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+    </ul>
+  </div>
+</nav>

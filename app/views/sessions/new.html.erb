@@ -1,0 +1,26 @@
+<h1 class="easygiving col-sm-6 col-sm-offset-3">
+  <br>
+  Sign In
+</h1>
+
+<div class="row">
+  <div class="signup-form col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+    <%= form_for(:session, url: sessions_path) do |f| %>
+
+  <div class="col-sm-6 col-sm-offset-3">
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+  </div>
+  <div class="col-sm-6 col-sm-offset-3">
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+  </div>
+  <div class="col-sm-6 col-sm-offset-3" style="margin-top: -35px;">
+        <%= f.submit "Sign In", class: "create-my-account btn btn-large btn-default" %>
+  </div>
+    <% end %>
+
+  <div class="col-sm-6 col-sm-offset-3">
+    <p class="sign_up"><br><br>New user? <%= link_to "Sign up!", signup_path %></p>
+  </div>
+</div>
