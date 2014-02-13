@@ -2,9 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.2'
 
+gem 'pg'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 group :development do
-  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
@@ -18,7 +19,6 @@ end
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
