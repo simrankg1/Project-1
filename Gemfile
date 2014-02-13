@@ -4,6 +4,7 @@ gem 'rails', '4.0.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 group :development do
+  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
@@ -16,8 +17,11 @@ end
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
